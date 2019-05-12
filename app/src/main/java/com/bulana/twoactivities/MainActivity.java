@@ -9,10 +9,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final String EXTRA_MESSAGE = "com.bulana.twoactivities.extra.MESSAGE";
-    private EditText mMessageEditText;
     public static final int TEXT_REQUEST = 1;
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
+    private EditText mMessageEditText;
     private TextView mReplyHeadTextView;
     private TextView mReplyTextView;
 

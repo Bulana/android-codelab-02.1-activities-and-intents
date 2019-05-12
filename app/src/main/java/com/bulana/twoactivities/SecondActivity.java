@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class SecondActivity extends AppCompatActivity {
     public static final String EXTRA_REPLY = "com.bulana.twoactivities.extra.REPLY";
     private EditText mReply;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class SecondActivity extends AppCompatActivity {
         String reply = mReply.getText().toString();
         Intent replyIntent = new Intent();
         replyIntent.putExtra(EXTRA_REPLY, reply);
-        setResult(RESULT_OK,replyIntent);
+        setResult(RESULT_OK, replyIntent);
         finish();
     }
 }
